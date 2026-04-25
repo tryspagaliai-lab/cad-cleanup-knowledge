@@ -26,7 +26,7 @@ if (-not (Test-Path $src))      { Write-Sync-Log "SRC missing: $src"; exit 1 }
 if (-not (Test-Path $repoRoot)) { Write-Sync-Log "REPO missing: $repoRoot"; exit 1 }
 
 # Ensure subdirs exist
-foreach ($sub in @("data","verdicts","archive","scripts","configs")) {
+foreach ($sub in @("data","verdicts","archive","scripts","configs","audits")) {
     $p = Join-Path $repoRoot $sub
     if (-not (Test-Path $p)) { New-Item -ItemType Directory -Path $p -Force | Out-Null }
 }
@@ -86,6 +86,14 @@ $configsDir = Join-Path $src "configs"
 if (Test-Path $configsDir) {
     $configFiles = Get-ChildItem -Path $configsDir -File | Where-Object { $_.Extension -eq ".json" }
 }
+# audits subdir files (.md + .json)
+$auditFiles = @()
+$auditsDir = Join-Path $src "audits"
+if (Test-Path $auditsDir) {
+    $auditFiles = Get-ChildItem -Path $auditsDir -File | Where-Object {
+        $_.Extension -eq ".md" -or $_.Extension -eq ".json"
+    }
+}
 
 foreach ($f in $allFiles) {
     if ($rootProtected -contains $f.Name) { continue }
@@ -111,6 +119,23 @@ foreach ($f in $allFiles) {
 foreach ($f in $configFiles) {
     $dest = Get-Target-Path $f.FullName "configs"
     if (-not $dest) { continue }
+    $needsCopy = $true
+    if (Test-Path $dest) {
+        $srcHash  = (Get-FileHash $f.FullName -Algorithm MD5).Hash
+        $destHash = (Get-FileHash $dest -Algorithm MD5).Hash
+        if ($srcHash -eq $destHash) { $needsCopy = $false }
+    }
+    if ($needsCopy) {
+        $destDir = Split-Path $dest
+        if (-not (Test-Path $destDir)) { New-Item -ItemType Directory -Path $destDir -Force | Out-Null }
+        Copy-Item -Path $f.FullName -Destination $dest -Force
+        $copied++
+    }
+}
+
+# Process audits/ subdir files (preserve subdir, both .md + .json)
+foreach ($f in $auditFiles) {
+    $dest = Join-Path $repoRoot ("audits\" + $f.Name)
     $needsCopy = $true
     if (Test-Path $dest) {
         $srcHash  = (Get-FileHash $f.FullName -Algorithm MD5).Hash
