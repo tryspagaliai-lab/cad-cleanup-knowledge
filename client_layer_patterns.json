@@ -1,0 +1,26 @@
+{
+  "per_project_removed": {
+    "bingham_ph3": [],
+    "brook_view": [],
+    "fairfields": [],
+    "kings_court": [],
+    "ramblers_gate": [],
+    "towcester": [],
+    "wigston": [],
+    "wixam_r1_r5_r6": []
+  },
+  "per_project_kept": {
+    "bingham_ph3": [],
+    "brook_view": [],
+    "fairfields": [],
+    "kings_court": [],
+    "ramblers_gate": [],
+    "towcester": [],
+    "wigston": [],
+    "wixam_r1_r5_r6": []
+  },
+  "global_kept_top_prefixes": [],
+  "global_removed_top_prefixes": [],
+  "global_kept_count": 0,
+  "global_removed_count": 0
+}

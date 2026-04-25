@@ -1,0 +1,1119 @@
+{
+  "rules_count": 100,
+  "rules": [
+    [
+      "^A0\\d{2}_",
+      "match",
+      "KEEP",
+      "nbs_text_meta",
+      1.0
+    ],
+    [
+      "^A1\\d{2}_",
+      "match",
+      "KEEP",
+      "nbs_substructure",
+      1.0
+    ],
+    [
+      "^A2\\d{2}_",
+      "match",
+      "KEEP",
+      "nbs_walls",
+      1.0
+    ],
+    [
+      "^A3\\d{2}_",
+      "match",
+      "KEEP",
+      "nbs_doors_windows",
+      1.0
+    ],
+    [
+      "^A4\\d{2}_",
+      "match",
+      "KEEP",
+      "nbs_floors",
+      1.0
+    ],
+    [
+      "^A5\\d{2}_",
+      "match",
+      "KEEP",
+      "nbs_roofs",
+      1.0
+    ],
+    [
+      "^A6\\d{2}_",
+      "match",
+      "KEEP",
+      "nbs_external",
+      1.0
+    ],
+    [
+      "^A7\\d{2}_",
+      "match",
+      "KEEP",
+      "nbs_fittings",
+      1.0
+    ],
+    [
+      "^A8\\d{2}_",
+      "match",
+      "KEEP",
+      "nbs_services",
+      1.0
+    ],
+    [
+      "^A9\\d{2}_",
+      "match",
+      "KEEP",
+      "nbs_external_works",
+      1.0
+    ],
+    [
+      "^G\\d{3}_",
+      "match",
+      "KEEP",
+      "nbs_external_g_codes",
+      1.0
+    ],
+    [
+      "^A-",
+      "match",
+      "KEEP",
+      "architectural_2d",
+      1.0
+    ],
+    [
+      "^a-",
+      "match",
+      "KEEP",
+      "architectural_2d_lc",
+      0.9
+    ],
+    [
+      "^F\\s",
+      "match",
+      "DROP_SITE_KEEP_FLOOR",
+      "floor_plan_anno",
+      1.0
+    ],
+    [
+      "^SITE_",
+      "match",
+      "KEEP",
+      "site_feature",
+      1.0
+    ],
+    [
+      "^plotno",
+      "match",
+      "KEEP",
+      "plot_numbers",
+      1.0
+    ],
+    [
+      "^Plot",
+      "match",
+      "KEEP",
+      "plot_outline",
+      0.9
+    ],
+    [
+      "^plot",
+      "match",
+      "KEEP",
+      "plot_outline_lc",
+      0.9
+    ],
+    [
+      "^TOP_OF_KERB",
+      "match",
+      "KEEP",
+      "highway_kerb_top",
+      1.0
+    ],
+    [
+      "^KERB_",
+      "match",
+      "KEEP",
+      "highway_kerb",
+      1.0
+    ],
+    [
+      "^TOP_KERB",
+      "match",
+      "KEEP",
+      "highway_kerb_alt",
+      1.0
+    ],
+    [
+      "^EDGE_OF_",
+      "match",
+      "KEEP",
+      "highway_edge",
+      1.0
+    ],
+    [
+      "^TOP_OF_BANK",
+      "match",
+      "DROP",
+      "earthworks_bank",
+      1.0
+    ],
+    [
+      "^BOTTOM_OF_BANK",
+      "match",
+      "DROP",
+      "earthworks_bank",
+      1.0
+    ],
+    [
+      "^CENTRE_LINE",
+      "match",
+      "KEEP",
+      "highway_centerline",
+      1.0
+    ],
+    [
+      "^FRENCH_DRAIN",
+      "match",
+      "DROP",
+      "drainage_french",
+      1.0
+    ],
+    [
+      "^FILL-INDICATOR",
+      "match",
+      "DROP",
+      "earthworks_fill",
+      1.0
+    ],
+    [
+      "^CUT-INDICATOR",
+      "match",
+      "DROP",
+      "earthworks_cut",
+      1.0
+    ],
+    [
+      "^FENCE",
+      "match",
+      "KEEP",
+      "fence",
+      1.0
+    ],
+    [
+      "^Garden fences",
+      "search",
+      "KEEP",
+      "garden_fence",
+      1.0
+    ],
+    [
+      "^idp ",
+      "match",
+      "KEEP",
+      "idp_designer_naming",
+      1.0
+    ],
+    [
+      "^QA_",
+      "match",
+      "DROP",
+      "quality_overlay",
+      1.0
+    ],
+    [
+      "^PDF_",
+      "match",
+      "DROP",
+      "pdf_raster_import",
+      1.0
+    ],
+    [
+      "^GH_",
+      "match",
+      "DROP",
+      "survey_levels",
+      1.0
+    ],
+    [
+      "^EPS_",
+      "match",
+      "DROP",
+      "survey_grid",
+      1.0
+    ],
+    [
+      "^NJCSURVEYS",
+      "search",
+      "DROP",
+      "topographic_survey",
+      1.0
+    ],
+    [
+      "^Setting Out",
+      "match",
+      "DROP",
+      "setting_out_grid",
+      1.0
+    ],
+    [
+      "^TRIANGLE",
+      "match",
+      "DROP",
+      "survey_triangulation",
+      1.0
+    ],
+    [
+      "^LEVELS",
+      "match",
+      "DROP",
+      "survey_levels",
+      1.0
+    ],
+    [
+      "^OS\\b",
+      "match",
+      "KEEP",
+      "ordnance_survey_base",
+      0.9
+    ],
+    [
+      "^OSTREES",
+      "match",
+      "KEEP",
+      "os_trees",
+      1.0
+    ],
+    [
+      "^OSTEXT",
+      "match",
+      "KEEP",
+      "os_text",
+      1.0
+    ],
+    [
+      "^OSBUILDING",
+      "match",
+      "KEEP",
+      "os_building",
+      1.0
+    ],
+    [
+      "^OS\\$",
+      "match",
+      "KEEP",
+      "os_xref",
+      1.0
+    ],
+    [
+      "^Xref\\s",
+      "match",
+      "DROP",
+      "xref_passthrough",
+      1.0
+    ],
+    [
+      "^XREF",
+      "match",
+      "DROP",
+      "xref_passthrough",
+      1.0
+    ],
+    [
+      "\\$0\\$",
+      "search",
+      "DROP",
+      "xref_internal",
+      1.0
+    ],
+    [
+      "\\|",
+      "search",
+      "DROP",
+      "xref_pipe_internal",
+      1.0
+    ],
+    [
+      "^Area\\s\\d+\\sSurvey",
+      "match",
+      "DROP",
+      "xref_area_survey",
+      1.0
+    ],
+    [
+      "^TopoSurvey",
+      "match",
+      "DROP",
+      "xref_toposurvey",
+      1.0
+    ],
+    [
+      "^HA-",
+      "match",
+      "KEEP",
+      "highway_arch",
+      1.0
+    ],
+    [
+      "^SECT-",
+      "match",
+      "DROP",
+      "section_drawing_meta",
+      1.0
+    ],
+    [
+      "^D-Zz",
+      "match",
+      "DROP",
+      "detail_drawing_meta",
+      1.0
+    ],
+    [
+      "^G-ANNO",
+      "match",
+      "DROP",
+      "general_annotation",
+      1.0
+    ],
+    [
+      "^sdc-",
+      "match",
+      "DROP",
+      "surface_drainage",
+      1.0
+    ],
+    [
+      "^MP-",
+      "match",
+      "KEEP",
+      "minor_pavement",
+      0.9
+    ],
+    [
+      "^A_",
+      "match",
+      "KEEP",
+      "architectural_a_under",
+      0.9
+    ],
+    [
+      "^D-",
+      "match",
+      "DROP",
+      "civil3d_design",
+      0.9
+    ],
+    [
+      "^BHN[_\\-\\s]",
+      "match",
+      "KEEP",
+      "bh_norfolk_naming",
+      1.0
+    ],
+    [
+      "^BDW",
+      "match",
+      "KEEP",
+      "barratt_developments",
+      1.0
+    ],
+    [
+      "^BDWS",
+      "match",
+      "KEEP",
+      "barratt_dwh_simul",
+      1.0
+    ],
+    [
+      "^DWH",
+      "match",
+      "KEEP",
+      "dwh_naming",
+      1.0
+    ],
+    [
+      "^Redrow",
+      "match",
+      "KEEP",
+      "redrow_naming",
+      1.0
+    ],
+    [
+      "^REDROW",
+      "match",
+      "KEEP",
+      "redrow_naming",
+      1.0
+    ],
+    [
+      "^RW_",
+      "match",
+      "KEEP",
+      "redrow_short",
+      1.0
+    ],
+    [
+      "^H7\\d{3}",
+      "match",
+      "KEEP",
+      "h7_project_code",
+      1.0
+    ],
+    [
+      "^H8\\d{3}",
+      "match",
+      "KEEP",
+      "h8_project_code",
+      1.0
+    ],
+    [
+      "^H9\\d{3}",
+      "match",
+      "KEEP",
+      "h9_project_code",
+      1.0
+    ],
+    [
+      "^E8\\d{2}",
+      "match",
+      "KEEP",
+      "e8_project_code",
+      1.0
+    ],
+    [
+      "^JPP_",
+      "match",
+      "KEEP",
+      "jpp_civil_engineer",
+      1.0
+    ],
+    [
+      "^57357",
+      "match",
+      "KEEP",
+      "fairfields_project",
+      1.0
+    ],
+    [
+      "^000",
+      "match",
+      "KEEP",
+      "triple_zero_root",
+      0.9
+    ],
+    [
+      "^Defpoints$",
+      "match",
+      "KEEP",
+      "system_defpoints",
+      1.0
+    ],
+    [
+      "^0$",
+      "match",
+      "KEEP",
+      "system_zero",
+      1.0
+    ],
+    [
+      "^M-EQPM$",
+      "match",
+      "KEEP",
+      "mechanical_equipment",
+      1.0
+    ],
+    [
+      "^Bollards$",
+      "match",
+      "KEEP",
+      "site_bollards",
+      1.0
+    ],
+    [
+      "^Text$",
+      "match",
+      "KEEP",
+      "generic_text",
+      0.8
+    ],
+    [
+      "^Drive$",
+      "match",
+      "KEEP",
+      "driveway_hatch",
+      1.0
+    ],
+    [
+      "^ROAD_GULLY",
+      "match",
+      "KEEP",
+      "road_drainage",
+      1.0
+    ],
+    [
+      "^EDGING_KERB",
+      "match",
+      "KEEP",
+      "edging_kerb",
+      1.0
+    ],
+    [
+      "^SW_COVER",
+      "match",
+      "KEEP",
+      "stormwater_cover",
+      1.0
+    ],
+    [
+      "^STREET_LIGHT",
+      "match",
+      "KEEP",
+      "street_light",
+      1.0
+    ],
+    [
+      "^TACTILE_PAVING",
+      "match",
+      "KEEP",
+      "tactile_paving",
+      1.0
+    ],
+    [
+      "^SPOT_LEVEL",
+      "match",
+      "DROP",
+      "spot_level_survey",
+      1.0
+    ],
+    [
+      "^WALL$",
+      "match",
+      "KEEP",
+      "wall_generic",
+      0.9
+    ],
+    [
+      "^WALL\\b",
+      "match",
+      "KEEP",
+      "wall_named",
+      0.9
+    ],
+    [
+      "^Arb_Survey",
+      "match",
+      "DROP",
+      "arboriculture_survey",
+      1.0
+    ],
+    [
+      "^Ext - Parking",
+      "match",
+      "KEEP",
+      "ext_parking_numbers",
+      1.0
+    ],
+    [
+      "^CONT-",
+      "match",
+      "DROP",
+      "contour_drawing",
+      1.0
+    ],
+    [
+      "^\\d{2}_Key",
+      "match",
+      "KEEP",
+      "drawing_key_legend",
+      1.0
+    ],
+    [
+      "^Manhole",
+      "match",
+      "KEEP",
+      "manhole",
+      1.0
+    ],
+    [
+      "^MH-",
+      "match",
+      "KEEP",
+      "manhole_short",
+      1.0
+    ],
+    [
+      "^Lamp",
+      "match",
+      "KEEP",
+      "lamp_post",
+      1.0
+    ],
+    [
+      "^Tree",
+      "match",
+      "KEEP",
+      "tree",
+      0.9
+    ],
+    [
+      "^Hedge",
+      "match",
+      "KEEP",
+      "hedge",
+      0.9
+    ],
+    [
+      "^Path",
+      "match",
+      "KEEP",
+      "footpath",
+      0.9
+    ],
+    [
+      "^Road",
+      "match",
+      "KEEP",
+      "road",
+      0.9
+    ],
+    [
+      "^Parking",
+      "match",
+      "KEEP",
+      "parking",
+      0.9
+    ],
+    [
+      "^Boundary",
+      "match",
+      "KEEP",
+      "boundary",
+      0.9
+    ],
+    [
+      "^Centerline",
+      "match",
+      "KEEP",
+      "centerline",
+      1.0
+    ]
+  ],
+  "master_only": {
+    "total_layers": 938,
+    "matched": 604,
+    "coverage_pct": 64.4,
+    "by_action": {
+      "KEEP": 392,
+      "UNKNOWN": 334,
+      "DROP": 165,
+      "DROP_SITE_KEEP_FLOOR": 47
+    },
+    "by_label": {
+      "no_match": 334,
+      "bh_norfolk_naming": 143,
+      "xref_internal": 97,
+      "barratt_developments": 80,
+      "floor_plan_anno": 47,
+      "architectural_a_under": 36,
+      "triple_zero_root": 33,
+      "arboriculture_survey": 19,
+      "pdf_raster_import": 16,
+      "survey_levels": 15,
+      "architectural_2d_lc": 14,
+      "idp_designer_naming": 7,
+      "dwh_naming": 7,
+      "highway_edge": 6,
+      "highway_arch": 6,
+      "nbs_walls": 6,
+      "nbs_text_meta": 5,
+      "redrow_naming": 4,
+      "earthworks_bank": 4,
+      "street_light": 4,
+      "fence": 3,
+      "contour_drawing": 3,
+      "xref_passthrough": 3,
+      "architectural_2d": 3,
+      "highway_centerline": 2,
+      "highway_kerb": 2,
+      "road_drainage": 2,
+      "spot_level_survey": 2,
+      "stormwater_cover": 2,
+      "edging_kerb": 2,
+      "drainage_french": 2,
+      "nbs_doors_windows": 2,
+      "nbs_external_works": 2,
+      "plot_outline": 2,
+      "system_zero": 1,
+      "highway_kerb_alt": 1,
+      "wall_generic": 1,
+      "highway_kerb_top": 1,
+      "tactile_paving": 1,
+      "earthworks_fill": 1,
+      "earthworks_cut": 1,
+      "system_defpoints": 1,
+      "nbs_floors": 1,
+      "plot_numbers": 1,
+      "site_bollards": 1,
+      "generic_text": 1,
+      "tree": 1,
+      "drawing_key_legend": 1,
+      "ordnance_survey_base": 1,
+      "nbs_external_g_codes": 1,
+      "surface_drainage": 1,
+      "topographic_survey": 1,
+      "mechanical_equipment": 1,
+      "hedge": 1,
+      "driveway_hatch": 1,
+      "ext_parking_numbers": 1,
+      "road": 1
+    },
+    "entities_by_label": {
+      "pdf_raster_import": 81693,
+      "xref_passthrough": 77968,
+      "survey_levels": 58617,
+      "no_match": 45103,
+      "triple_zero_root": 22821,
+      "floor_plan_anno": 20001,
+      "bh_norfolk_naming": 18887,
+      "earthworks_bank": 18170,
+      "xref_internal": 17478,
+      "idp_designer_naming": 16740,
+      "highway_kerb": 12950,
+      "barratt_developments": 12667,
+      "highway_edge": 10650,
+      "earthworks_fill": 8436,
+      "highway_kerb_top": 7870,
+      "fence": 7240,
+      "highway_kerb_alt": 6285,
+      "architectural_2d_lc": 6265,
+      "earthworks_cut": 5265,
+      "edging_kerb": 4830,
+      "road_drainage": 4795,
+      "stormwater_cover": 4735,
+      "spot_level_survey": 4540,
+      "street_light": 4495,
+      "highway_centerline": 4470,
+      "drainage_french": 4235,
+      "architectural_a_under": 3751,
+      "contour_drawing": 3741,
+      "arboriculture_survey": 3711,
+      "system_zero": 3585,
+      "wall_generic": 2070,
+      "ext_parking_numbers": 1922,
+      "tactile_paving": 1760,
+      "drawing_key_legend": 1503,
+      "plot_numbers": 1415,
+      "topographic_survey": 1050,
+      "hedge": 726,
+      "highway_arch": 669,
+      "generic_text": 573,
+      "nbs_text_meta": 534,
+      "plot_outline": 473,
+      "redrow_naming": 259,
+      "architectural_2d": 253,
+      "nbs_external_works": 166,
+      "nbs_walls": 124,
+      "site_bollards": 99,
+      "dwh_naming": 88,
+      "mechanical_equipment": 70,
+      "nbs_doors_windows": 60,
+      "road": 59,
+      "surface_drainage": 56,
+      "nbs_external_g_codes": 49,
+      "nbs_floors": 45,
+      "driveway_hatch": 36,
+      "system_defpoints": 26,
+      "ordnance_survey_base": 4,
+      "tree": 3
+    },
+    "top_30_unmatched": [
+      [
+        "01TWM_BINS",
+        1389
+      ],
+      [
+        "SW_DRAINAGE_CHAN",
+        1335
+      ],
+      [
+        "ROAD_FOOTWAY_LEVELS",
+        1328
+      ],
+      [
+        "DROP_KERB",
+        1255
+      ],
+      [
+        "ROAD_SIGN",
+        1105
+      ],
+      [
+        "L-Ee-45-20-M-HedgeSingle",
+        1095
+      ],
+      [
+        "WATER_COVER",
+        1035
+      ],
+      [
+        "ATR24",
+        1029
+      ],
+      [
+        "Rear paths",
+        1024
+      ],
+      [
+        "BT_COVER",
+        1000
+      ],
+      [
+        "FPCR_T_Text",
+        942
+      ],
+      [
+        "CONTOURS_NORMAL",
+        841
+      ],
+      [
+        "Construction Lines",
+        706
+      ],
+      [
+        "WALL_ELV",
+        700
+      ],
+      [
+        "Part B compliance",
+        684
+      ],
+      [
+        "front paths hatch",
+        683
+      ],
+      [
+        "Front Paths",
+        649
+      ],
+      [
+        "HOUSE_EXTERNAL_LEVELS",
+        622
+      ],
+      [
+        "ROAD_SIGN_INFO",
+        595
+      ],
+      [
+        "CATV_COVER",
+        595
+      ],
+      [
+        "Conveyance Lines",
+        585
+      ],
+      [
+        "FPCR_T_Shade",
+        573
+      ],
+      [
+        "FPCR_T_Removed",
+        558
+      ],
+      [
+        "OPHIR - HT CODES",
+        531
+      ],
+      [
+        "PROPOSED-TOK",
+        513
+      ],
+      [
+        "HOUSE_DOORS",
+        509
+      ],
+      [
+        "L_Proposed Vegetation",
+        508
+      ],
+      [
+        "rear paths hatch (not colour)",
+        505
+      ],
+      [
+        "Layer 1",
+        504
+      ],
+      [
+        "07_Block",
+        504
+      ]
+    ]
+  },
+  "full_vocab": {
+    "total_layers": 2607,
+    "matched": 1644,
+    "coverage_pct": 63.1,
+    "by_action": {
+      "UNKNOWN": 963,
+      "DROP": 835,
+      "KEEP": 760,
+      "DROP_SITE_KEEP_FLOOR": 49
+    },
+    "top_30_unmatched": [
+      [
+        "Details",
+        21210,
+        1
+      ],
+      [
+        "G8010030",
+        11186,
+        1
+      ],
+      [
+        "510",
+        10092,
+        1
+      ],
+      [
+        "Tracking",
+        9268,
+        2
+      ],
+      [
+        "OSROAD",
+        8694,
+        1
+      ],
+      [
+        "Insulation",
+        8415,
+        1
+      ],
+      [
+        "a_tmarks",
+        7248,
+        2
+      ],
+      [
+        "VEGETATION",
+        6800,
+        1
+      ],
+      [
+        "G8010001",
+        6516,
+        1
+      ],
+      [
+        "I-WALL-1",
+        6139,
+        1
+      ],
+      [
+        "VELUX_ROOFWINDOW",
+        5220,
+        1
+      ],
+      [
+        "DRAINAGE_RUN_SURFACE_ANNOTATION",
+        4491,
+        1
+      ],
+      [
+        "FOOTPATH_CHANNEL_LOW_POINTS",
+        4407,
+        1
+      ],
+      [
+        "OSWATER",
+        4276,
+        1
+      ],
+      [
+        "STORM-LAY-TEXT",
+        4101,
+        1
+      ],
+      [
+        "DRAINAGE_LATERAL",
+        3753,
+        1
+      ],
+      [
+        "March 2024 level checks",
+        3625,
+        1
+      ],
+      [
+        "509",
+        3384,
+        1
+      ],
+      [
+        "01TWM_BINS",
+        3294,
+        1
+      ],
+      [
+        "S-STRS",
+        3243,
+        1
+      ],
+      [
+        "4_PLANTINGAREA_PATTERN",
+        2970,
+        2
+      ],
+      [
+        "FPCR_T_Text",
+        2932,
+        1
+      ],
+      [
+        "G8010032",
+        2904,
+        1
+      ],
+      [
+        "ATR24",
+        2744,
+        1
+      ],
+      [
+        "$AUDIT_BAD_LAYER1",
+        2700,
+        1
+      ],
+      [
+        "GULLIES",
+        2616,
+        1
+      ],
+      [
+        "RSO-FORWARD VISIBILITY",
+        2400,
+        1
+      ],
+      [
+        "4_HEDGE_PATTERN",
+        2322,
+        2
+      ],
+      [
+        "Social Tenure",
+        2265,
+        1
+      ],
+      [
+        "FOUL-LAY-TEXT",
+        2175,
+        1
+      ]
+    ]
+  }
+}
