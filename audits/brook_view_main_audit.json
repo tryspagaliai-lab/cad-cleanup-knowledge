@@ -1,0 +1,756 @@
+{
+  "spec_id": "brook_view_main_audit_v1",
+  "started_at": "2026-04-25 13:53:47",
+  "file_meta": {
+    "source_dwg_path": "E:\\cad-site-agent\\_tests\\brook_view_BOUND_2026-04-19\\X.dwg",
+    "source_dwg_sha256_before": "190687fda620ce465e5f1724638e0538cc6b3f53d090b5a131361f1a1ca57bf9",
+    "source_dwg_sha256_after": "190687fda620ce465e5f1724638e0538cc6b3f53d090b5a131361f1a1ca57bf9",
+    "source_dwg_untouched": true,
+    "source_dwg_size_bytes": 3071285,
+    "temp_dxf_size_bytes": 23930848,
+    "dxf_version_detected": "AC1024",
+    "insunits_detected": 6,
+    "audit_errors_count": 0,
+    "audit_errors_top_10": []
+  },
+  "proxy_detection": {
+    "has_acad_proxy": false,
+    "acad_proxy_count": 0,
+    "has_aecc_classes": true,
+    "aecc_class_count": 454,
+    "aecc_class_names_top_30": [
+      "AEC_DISP_REP_2D_SECTION",
+      "AEC_DISP_PROPS_2D_SECTION",
+      "AEC_DISP_REP_ANCHOR",
+      "AEC_DISP_REP_ANCHOR_ENT_TO_NODE",
+      "AEC_DISP_PROPS_ENT",
+      "AEC_DISP_REP_CAMERA",
+      "AEC_DISP_PROPS_CAMERA",
+      "AEC_DISP_REP_CLIP_VOLUME_MODEL",
+      "AEC_DISP_PROPS_CLIP_VOLUME",
+      "AEC_DISP_REP_CLIP_VOLUME_PLAN",
+      "AEC_DISP_REP_CLIP_VOLUME_RESULT",
+      "AEC_DISP_REP_CLIP_VOLUME_RESULT_SUBDIV",
+      "AEC_DISP_PROPS_CLIP_VOLUME_RESULT",
+      "AEC_DISP_REP_ENT_REF",
+      "AEC_DISP_PROPS_ENT_REF",
+      "AEC_DISP_REP_LAYOUT_CURVE",
+      "AEC_VARS_DWG_SETUP",
+      "AEC_DISP_PROPS_LAYOUT_CURVE",
+      "AEC_DISP_REP_LAYOUT_GRID2D",
+      "AEC_DISP_PROPS_LAYOUT_GRID2D",
+      "AEC_DISP_REP_LAYOUT_GRID3D",
+      "AEC_DISP_PROPS_LAYOUT_GRID3D",
+      "AEC_DISP_REP_MASKBLOCK_REF",
+      "AEC_DISP_PROPS_MASKBLOCK",
+      "AEC_DISP_REP_MASS_ELEM_MODEL",
+      "AEC_DISP_PROPS_MASS_ELEM_MODEL",
+      "AEC_DISP_REP_MASS_ELEM_SCHEM",
+      "AEC_DISP_REP_MASS_GROUP_MODEL",
+      "AEC_DISP_PROPS_MASS_GROUP",
+      "AEC_DISP_REP_MASS_GROUP_PLAN"
+    ],
+    "has_civil_3d_objects": false,
+    "recommended_dxf_version": "R2010"
+  },
+  "xref_inventory": {
+    "xref_count": 7,
+    "xrefs": [
+      {
+        "name": "6285-L-072F PHASE 2 & 3A REDLINE PLAN",
+        "path": ".\\Title Plan\\6285-L-072F PHASE 2 & 3A REDLINE PLAN.dwg",
+        "resolved_path": "E:\\cad-site-agent\\_tests\\brook_view_BOUND_2026-04-19\\Title Plan\\6285-L-072F PHASE 2 & 3A REDLINE PLAN.dwg",
+        "exists_on_disk": false,
+        "file_size": 0
+      },
+      {
+        "name": "34377_T_REV4 (2)",
+        "path": ".\\Topo\\34377_T_REV4 (2).dwg",
+        "resolved_path": "E:\\cad-site-agent\\_tests\\brook_view_BOUND_2026-04-19\\Topo\\34377_T_REV4 (2).dwg",
+        "exists_on_disk": false,
+        "file_size": 0
+      },
+      {
+        "name": "Road Layout",
+        "path": ".\\Road Layout\\Road Layout.dwg",
+        "resolved_path": "E:\\cad-site-agent\\_tests\\brook_view_BOUND_2026-04-19\\Road Layout\\Road Layout.dwg",
+        "exists_on_disk": false,
+        "file_size": 0
+      },
+      {
+        "name": "Eastern Green Pickford RM 2 & 3A 100425 - CB - 11.12.25",
+        "path": ".\\Promap\\Eastern Green Pickford RM 2 & 3A 100425 - CB - 11.12.25.dwg",
+        "resolved_path": "E:\\cad-site-agent\\_tests\\brook_view_BOUND_2026-04-19\\Promap\\Eastern Green Pickford RM 2 & 3A 100425 - CB - 11.12.25.dwg",
+        "exists_on_disk": false,
+        "file_size": 0
+      },
+      {
+        "name": "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit",
+        "path": ".\\General Arrangement\\02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit.dwg",
+        "resolved_path": "E:\\cad-site-agent\\_tests\\brook_view_BOUND_2026-04-19\\General Arrangement\\02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit.dwg",
+        "exists_on_disk": false,
+        "file_size": 0
+      },
+      {
+        "name": "6285 - Tree Survey Plan - Phase 2 & 3A idp edit",
+        "path": ".\\Tree Survey Plan\\6285 - Tree Survey Plan - Phase 2 & 3A idp edit.dwg",
+        "resolved_path": "E:\\cad-site-agent\\_tests\\brook_view_BOUND_2026-04-19\\Tree Survey Plan\\6285 - Tree Survey Plan - Phase 2 & 3A idp edit.dwg",
+        "exists_on_disk": false,
+        "file_size": 0
+      },
+      {
+        "name": "X_ Phase 2 Highway Layout Rev J idp edit",
+        "path": ".\\2024.05.17 - Approved bus link\\X_ Phase 2 Highway Layout Rev J idp edit.dwg",
+        "resolved_path": "E:\\cad-site-agent\\_tests\\brook_view_BOUND_2026-04-19\\2024.05.17 - Approved bus link\\X_ Phase 2 Highway Layout Rev J idp edit.dwg",
+        "exists_on_disk": false,
+        "file_size": 0
+      }
+    ],
+    "expected_xrefs_match_count": 5,
+    "topo_xref_match": false
+  },
+  "entity_counts": {
+    "total_entities": 2146,
+    "by_type": {
+      "LWPOLYLINE": 625,
+      "INSERT": 561,
+      "LINE": 512,
+      "MTEXT": 312,
+      "ARC": 108,
+      "HATCH": 17,
+      "CIRCLE": 6,
+      "DIMENSION": 2,
+      "OLE2FRAME": 2,
+      "LEADER": 1
+    },
+    "insert_count": 561,
+    "block_definition_count": 241,
+    "model_space_entities": 2146,
+    "paper_space_layouts_count": 1
+  },
+  "layer_analysis": {
+    "total_layers": 722,
+    "layers_with_zero_entities_count": 672,
+    "layers_with_zero_entities_top_30": [
+      "000 - National Grid Easement",
+      "000 Apartments",
+      "000 Shared Surface Street",
+      "000_XREFS LOCKED",
+      "00_XREFS LOCKED",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|ACO_CHANNEL",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|ACO_CHANNEL_INFO",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|BOLLARD",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|BOLLARD_ELV",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|BOTTOM_OF_BANK",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|BOTTOM_OF_BANK_E",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|BREAK_LINE",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|BREAK_LINE_ELV",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|BT_COVER",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|BT_COVER_ELV",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|CATV_COVER",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|CATV_COVER_ELV",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|CENTRE_LINE",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|CENTRE_LINE_ELV",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|CONCRETE_SPOT_EL",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|CONCRETE_SPOT_LE",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|DROP_KERB",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|DROP_KERB_ELV",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|EARTH__INFO",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|EDGE_ASPHALT",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|EDGE_ASPHALT_ELV",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|EDGE_OF_CONCRETE",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|EDGE_OF_CONC_ELV",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|EDGE_OF_FOOTPATH",
+      "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|EDGE_OF_FOOT_ELV"
+    ],
+    "top_50_layers_by_entity_count": [
+      {
+        "name": "0",
+        "entity_count": 462,
+        "dominant_entity_type": "MTEXT"
+      },
+      {
+        "name": "28-House type- Patios-rear paths",
+        "entity_count": 321,
+        "dominant_entity_type": "LWPOLYLINE"
+      },
+      {
+        "name": "Redrow - Parking Spaces",
+        "entity_count": 186,
+        "dominant_entity_type": "INSERT"
+      },
+      {
+        "name": "31-drives",
+        "entity_count": 178,
+        "dominant_entity_type": "LINE"
+      },
+      {
+        "name": "31-fences",
+        "entity_count": 177,
+        "dominant_entity_type": "LWPOLYLINE"
+      },
+      {
+        "name": "1211 Highway Design 8$0$RSO-PATH",
+        "entity_count": 162,
+        "dominant_entity_type": "LWPOLYLINE"
+      },
+      {
+        "name": "1211 Highway Design 8$0$RSO-KERBS",
+        "entity_count": 102,
+        "dominant_entity_type": "LINE"
+      },
+      {
+        "name": "Redrow - Bins",
+        "entity_count": 80,
+        "dominant_entity_type": "INSERT"
+      },
+      {
+        "name": "Gate",
+        "entity_count": 78,
+        "dominant_entity_type": "INSERT"
+      },
+      {
+        "name": "Redrow - Trees",
+        "entity_count": 63,
+        "dominant_entity_type": "INSERT"
+      },
+      {
+        "name": "31-walls",
+        "entity_count": 54,
+        "dominant_entity_type": "LWPOLYLINE"
+      },
+      {
+        "name": "Redrow - Sheds",
+        "entity_count": 48,
+        "dominant_entity_type": "INSERT"
+      },
+      {
+        "name": "1211 Highway Design 8$0$BCL_L_Tactile Paving",
+        "entity_count": 33,
+        "dominant_entity_type": "LWPOLYLINE"
+      },
+      {
+        "name": "1211 Highway Design 8$0$RSO-BUILDOUT",
+        "entity_count": 24,
+        "dominant_entity_type": "ARC"
+      },
+      {
+        "name": "1211 Highway Design 8$0$RSO-TACTILE",
+        "entity_count": 20,
+        "dominant_entity_type": "LINE"
+      },
+      {
+        "name": "RAS - Text Schedule",
+        "entity_count": 19,
+        "dominant_entity_type": "MTEXT"
+      },
+      {
+        "name": "1211 Highway Design 8$0$RSO-CALM",
+        "entity_count": 15,
+        "dominant_entity_type": "LWPOLYLINE"
+      },
+      {
+        "name": "Redrow - First time homes",
+        "entity_count": 12,
+        "dominant_entity_type": "INSERT"
+      },
+      {
+        "name": "Redrow - Slabs",
+        "entity_count": 11,
+        "dominant_entity_type": "LWPOLYLINE"
+      },
+      {
+        "name": "RAS - Roads",
+        "entity_count": 10,
+        "dominant_entity_type": "LINE"
+      },
+      {
+        "name": "RAS - Footpaths",
+        "entity_count": 10,
+        "dominant_entity_type": "LINE"
+      },
+      {
+        "name": "RAS - Text Notes",
+        "entity_count": 9,
+        "dominant_entity_type": "MTEXT"
+      },
+      {
+        "name": "Redrow - Private Drives Hatch",
+        "entity_count": 9,
+        "dominant_entity_type": "HATCH"
+      },
+      {
+        "name": "RAS - Text Type Names",
+        "entity_count": 7,
+        "dominant_entity_type": "MTEXT"
+      },
+      {
+        "name": "1211 Highway Design 8$0$RSO-VERGE",
+        "entity_count": 7,
+        "dominant_entity_type": "ARC"
+      },
+      {
+        "name": "1211 Highway Design 8$0$ROAD_CENTRELINES",
+        "entity_count": 7,
+        "dominant_entity_type": "LWPOLYLINE"
+      },
+      {
+        "name": "1211 Highway Design 8$0$RSO-CENTRELINES",
+        "entity_count": 4,
+        "dominant_entity_type": "ARC"
+      },
+      {
+        "name": "RAS - Paving Hatch",
+        "entity_count": 3,
+        "dominant_entity_type": "HATCH"
+      },
+      {
+        "name": "Redrow - Net Areas (Phase 1a)",
+        "entity_count": 2,
+        "dominant_entity_type": "LWPOLYLINE"
+      },
+      {
+        "name": "RAS - Text Plot Numbers",
+        "entity_count": 2,
+        "dominant_entity_type": "MTEXT"
+      },
+      {
+        "name": "RAS - Walls",
+        "entity_count": 2,
+        "dominant_entity_type": "LINE"
+      },
+      {
+        "name": "RAS - Vehicles",
+        "entity_count": 2,
+        "dominant_entity_type": "INSERT"
+      },
+      {
+        "name": "RAS - Site Boundary",
+        "entity_count": 2,
+        "dominant_entity_type": "LWPOLYLINE"
+      },
+      {
+        "name": "RAS - New trees",
+        "entity_count": 2,
+        "dominant_entity_type": "INSERT"
+      },
+      {
+        "name": "RAS - Parking Spaces",
+        "entity_count": 2,
+        "dominant_entity_type": "INSERT"
+      },
+      {
+        "name": "RAS - Dimensions",
+        "entity_count": 2,
+        "dominant_entity_type": "DIMENSION"
+      },
+      {
+        "name": "Redrow - Shared",
+        "entity_count": 2,
+        "dominant_entity_type": "HATCH"
+      },
+      {
+        "name": "Redrow - Rented",
+        "entity_count": 2,
+        "dominant_entity_type": "HATCH"
+      },
+      {
+        "name": "BALCONIES",
+        "entity_count": 2,
+        "dominant_entity_type": "INSERT"
+      },
+      {
+        "name": "_STATION",
+        "entity_count": 2,
+        "dominant_entity_type": "LINE"
+      },
+      {
+        "name": "L-Ee-45-20-M-HedgeSingle",
+        "entity_count": 2,
+        "dominant_entity_type": "HATCH"
+      },
+      {
+        "name": "RAS - Garden Fences",
+        "entity_count": 1,
+        "dominant_entity_type": "LINE"
+      },
+      {
+        "name": "RAS - Road Markings",
+        "entity_count": 1,
+        "dominant_entity_type": "LINE"
+      },
+      {
+        "name": "RAS - Post and Rail Fence",
+        "entity_count": 1,
+        "dominant_entity_type": "LINE"
+      },
+      {
+        "name": "TITLEBLOCK",
+        "entity_count": 1,
+        "dominant_entity_type": "INSERT"
+      },
+      {
+        "name": "Redrow - ASHP",
+        "entity_count": 1,
+        "dominant_entity_type": "INSERT"
+      },
+      {
+        "name": "Redrow - Deed of Grant JPG 5m Easement",
+        "entity_count": 1,
+        "dominant_entity_type": "OLE2FRAME"
+      },
+      {
+        "name": "Redrow - Underground (brown) and overhead (yellow) cables in Easement JPG",
+        "entity_count": 1,
+        "dominant_entity_type": "OLE2FRAME"
+      },
+      {
+        "name": "Redrow - Sprinklers",
+        "entity_count": 1,
+        "dominant_entity_type": "INSERT"
+      },
+      {
+        "name": "XREF Layer",
+        "entity_count": 1,
+        "dominant_entity_type": "INSERT"
+      }
+    ],
+    "layers_in_47_stable_set": {
+      "count": 2,
+      "list": [
+        "Defpoints",
+        "0"
+      ]
+    },
+    "layers_BHN_prefix": {
+      "count": 0,
+      "list": []
+    },
+    "layers_DWH_or_BDW_prefix": {
+      "count": 0,
+      "list": []
+    },
+    "layers_GH_prefix": {
+      "count": 0,
+      "list": []
+    },
+    "layers_OS_prefix": {
+      "count": 0,
+      "list": []
+    },
+    "layers_F_space_prefix": {
+      "count": 0,
+      "list": []
+    },
+    "layers_xref_prefix": {
+      "count": 614,
+      "list_top_30": [
+        "Eastern Green Pickford RM 2 & 3A 100425 - CB - 11.12.25|PDF_Margins",
+        "Road Layout|1211 Highway Design 8$0$Markings",
+        "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|CONCRETE_SPOT_LE",
+        "34377_T_REV4 (2)|GH_TREE_INFORMATION",
+        "Eastern Green Pickford RM 2 & 3A 100425 - CB - 11.12.25|PDF_CP-Access Rights",
+        "Eastern Green Pickford RM 2 & 3A 100425 - CB - 11.12.25|000 - Water Butt Locations",
+        "34377_T_REV4 (2)|GH_DKERB",
+        "Eastern Green Pickford RM 2 & 3A 100425 - CB - 11.12.25|A010_Text",
+        "34377_T_REV4 (2)|GH_WATER",
+        "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|_HIDDEN",
+        "X_ Phase 2 Highway Layout Rev J idp edit|HA-STR-PAD",
+        "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|TACTILE_PAVING",
+        "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|EDGE_ASPHALT",
+        "6285 - Tree Survey Plan - Phase 2 & 3A idp edit|FPCR_ T_FIELD PARCEL 6",
+        "Eastern Green Pickford RM 2 & 3A 100425 - CB - 11.12.25|Access_ALL",
+        "Eastern Green Pickford RM 2 & 3A 100425 - CB - 11.12.25|000 Edge Street",
+        "Eastern Green Pickford RM 2 & 3A 100425 - CB - 11.12.25|A_feasibility sketch",
+        "Eastern Green Pickford RM 2 & 3A 100425 - CB - 11.12.25|Layer 1",
+        "Eastern Green Pickford RM 2 & 3A 100425 - CB - 11.12.25|F Text Code - DWH",
+        "Eastern Green Pickford RM 2 & 3A 100425 - CB - 11.12.25|PROPOSED-TOK",
+        "Eastern Green Pickford RM 2 & 3A 100425 - CB - 11.12.25|H Brentford",
+        "Eastern Green Pickford RM 2 & 3A 100425 - CB - 11.12.25|F Storey 1",
+        "34377_T_REV4 (2)|GH_DRAINAGE",
+        "Eastern Green Pickford RM 2 & 3A 100425 - CB - 11.12.25|A_Development Boundary",
+        "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|_PAGES",
+        "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|KERB_CHANNEL_ELV",
+        "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|BT_COVER",
+        "Eastern Green Pickford RM 2 & 3A 100425 - CB - 11.12.25|F Services SVP",
+        "Eastern Green Pickford RM 2 & 3A 100425 - CB - 11.12.25|FPCR_T_Text",
+        "02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit|SW_COVER_ELV"
+      ]
+    }
+  },
+  "block_analysis": {
+    "top_30_blocks_by_insert_count": [
+      {
+        "name": "A$C38ab275a",
+        "insert_count": 188
+      },
+      {
+        "name": "A$C894d974d",
+        "insert_count": 80
+      },
+      {
+        "name": "*U198",
+        "insert_count": 27
+      },
+      {
+        "name": "TREE",
+        "insert_count": 23
+      },
+      {
+        "name": "GAR_SGS2_M.",
+        "insert_count": 21
+      },
+      {
+        "name": "*U216",
+        "insert_count": 17
+      },
+      {
+        "name": "*U172",
+        "insert_count": 13
+      },
+      {
+        "name": "A$C9434d015",
+        "insert_count": 10
+      },
+      {
+        "name": "*U109",
+        "insert_count": 8
+      },
+      {
+        "name": "*U108",
+        "insert_count": 8
+      },
+      {
+        "name": "*U215",
+        "insert_count": 8
+      },
+      {
+        "name": "*U115",
+        "insert_count": 7
+      },
+      {
+        "name": "*U116",
+        "insert_count": 7
+      },
+      {
+        "name": "*U203",
+        "insert_count": 7
+      },
+      {
+        "name": "GAR_DGT3_M.",
+        "insert_count": 5
+      },
+      {
+        "name": "*U214",
+        "insert_count": 5
+      },
+      {
+        "name": "*U113",
+        "insert_count": 4
+      },
+      {
+        "name": "1211 Highway Design 8$0$A$C1fa802b3",
+        "insert_count": 4
+      },
+      {
+        "name": "*U175",
+        "insert_count": 4
+      },
+      {
+        "name": "*U170",
+        "insert_count": 4
+      },
+      {
+        "name": "A$C1ac2574c",
+        "insert_count": 3
+      },
+      {
+        "name": "*U112",
+        "insert_count": 3
+      },
+      {
+        "name": "*U209",
+        "insert_count": 3
+      },
+      {
+        "name": "A$C64EA2127",
+        "insert_count": 2
+      },
+      {
+        "name": "*U174",
+        "insert_count": 2
+      },
+      {
+        "name": "*U83",
+        "insert_count": 1
+      },
+      {
+        "name": "*U82",
+        "insert_count": 1
+      },
+      {
+        "name": "A$C5CCF3739",
+        "insert_count": 1
+      },
+      {
+        "name": "A$C69C32E87",
+        "insert_count": 1
+      },
+      {
+        "name": "A$C6BD61136",
+        "insert_count": 1
+      }
+    ],
+    "wrapper_blocks_detected": [
+      {
+        "pattern": "^A$C",
+        "count": 11,
+        "samples": [
+          "A$C5CCF3739",
+          "A$C69C32E87",
+          "A$C6BD61136",
+          "A$C757D01B2",
+          "A$C64EA2127"
+        ]
+      },
+      {
+        "pattern": "^*U",
+        "count": 98,
+        "samples": [
+          "*U83",
+          "*U82",
+          "*U81",
+          "*U137",
+          "*U136"
+        ]
+      },
+      {
+        "pattern": "^*X",
+        "count": 0,
+        "samples": []
+      }
+    ],
+    "house_type_blocks_found": []
+  },
+  "classifier_dry_run": {
+    "layers_KEEP": {
+      "count": 37,
+      "pct": 5.1
+    },
+    "layers_DROP": {
+      "count": 614,
+      "pct": 85.0
+    },
+    "layers_DROP_SITE_KEEP_FLOOR": {
+      "count": 0,
+      "pct": 0.0
+    },
+    "layers_UNCOVERED": {
+      "count": 71,
+      "pct": 9.8,
+      "list_capped": [
+        "28-House type- Patios-rear paths",
+        "31-drives",
+        "31-fences",
+        "Gate",
+        "31-walls",
+        "RAS - Text Schedule",
+        "RAS - Footpaths",
+        "RAS - Roads",
+        "RAS - Text Notes",
+        "RAS - Text Type Names",
+        "RAS - Paving Hatch",
+        "BALCONIES",
+        "RAS - Site Boundary",
+        "RAS - Text Plot Numbers",
+        "RAS - Dimensions",
+        "RAS - Vehicles",
+        "RAS - Walls",
+        "L-Ee-45-20-M-HedgeSingle",
+        "RAS - New trees",
+        "_STATION",
+        "RAS - Parking Spaces",
+        "RAS - Post and Rail Fence",
+        "RAS - Road Markings",
+        "TITLEBLOCK",
+        "RAS - Garden Fences",
+        "BA SECTION MARKS",
+        "B-Conservatory",
+        "V- Patio",
+        "BA FOUNDATION OUTLINE",
+        "BA MESH SPAN BLOCK",
+        "C-Boundary-Plot TD",
+        "PDP hatch outline",
+        "E-Storm-Plot Drainage",
+        "BA MESH SPANS",
+        "SPD NAME PLATE",
+        "V-Roof Canopy",
+        "B-Handing",
+        "BA EXTERNAL WALLS HATCH",
+        "BA EXTERNAL WALLS OUTLINE",
+        "FPCR_acoustic fence",
+        "BA DIMENSIONS",
+        "BA TEXT",
+        "E-Foul-Plot Drainage",
+        "G-Anno-Nplt",
+        "_Checked",
+        "BA CL",
+        "BA RC DIMS",
+        "B-Graphic",
+        "B-HT Name",
+        "BA FLOOR SPANS",
+        "Plan_Walls",
+        "B-Heat Pump",
+        "BA SLAB OUTLINE",
+        "BA RC TEXT",
+        "B-Window Openings",
+        "RAS - Retaining Wall",
+        "BE SECTION TEXT",
+        "bins",
+        "00_XREFS LOCKED",
+        "COLUMNS",
+        "E-Foul-Plot Drainage Label",
+        "V-Roof O-H",
+        "B-Footprint",
+        "BA FOUNDATION WIDTHS",
+        "BA SUB WALL",
+        "B-Service Entry",
+        "BA MESH",
+        "BA PARTITIONS",
+        "BA FOUNDATION HIDDEN",
+        "B-Entrance",
+        "planning hatch"
+      ]
+    },
+    "entities_KEEP": {
+      "count": 881,
+      "pct": 41.1
+    },
+    "entities_DROP": {
+      "count": 375,
+      "pct": 17.5
+    },
+    "entities_DROP_SITE": {
+      "count": 0,
+      "pct": 0.0
+    },
+    "entities_UNCOVERED": {
+      "count": 890,
+      "pct": 41.5
+    }
+  },
+  "go_no_go_signal": {
+    "rule_set": [
+      "RULE A — entities_UNCOVERED > 25% → RULE_EXTENSION",
+      "RULE B — layers_UNCOVERED > 40% → RULE_EXTENSION",
+      "RULE C — ACAD_PROXY > 50 → R2010 fallback",
+      "RULE D — audit_errors > 100 → ezdxf.recover full pass",
+      "RULE E — source modified → ABORT"
+    ],
+    "computed_recommendation": "RULE_EXTENSION",
+    "rationale_triggered_rules": [
+      "RULE A: entities_UNCOVERED > 25%"
+    ]
+  },
+  "completed_at": "2026-04-25 13:53:52"
+}
