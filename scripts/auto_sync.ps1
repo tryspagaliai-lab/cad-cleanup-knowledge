@@ -1,6 +1,10 @@
 # Auto-sync E:/AgentOS/exports/ -> cad-cleanup-knowledge repo
 # Triggered by Windows Task Scheduler every 2 minutes
-# Routes .md files to repo root, .json files to data/
+# Routing rules:
+#   *.json                              -> data/
+#   START_HERE / MASTER_STATE / README / HANDOFF*  -> root
+#   user_verdicts_* / *_verdicts.md     -> verdicts/  (with user_verdicts_ prefix stripped)
+#   all other *.md                      -> archive/
 
 $ErrorActionPreference = "Continue"
 
@@ -21,34 +25,63 @@ function Write-Sync-Log {
 if (-not (Test-Path $src))      { Write-Sync-Log "SRC missing: $src"; exit 1 }
 if (-not (Test-Path $repoRoot)) { Write-Sync-Log "REPO missing: $repoRoot"; exit 1 }
 
-# Files to sync — protect special docs from getting overwritten by exports if names clash
+# Ensure subdirs exist
+foreach ($sub in @("data","verdicts","archive","scripts")) {
+    $p = Join-Path $repoRoot $sub
+    if (-not (Test-Path $p)) { New-Item -ItemType Directory -Path $p -Force | Out-Null }
+}
+
+# Files that ALWAYS stay in root (these belong to repo meta, not exports)
 $rootProtected = @("README.md", ".gitignore")
+
+# Files that get copied to root (high-priority chat-Claude docs)
+$rootDocs = @("START_HERE.md", "MASTER_STATE.md")
+
+function Get-Target-Path {
+    param([string]$filename)
+    $name = [System.IO.Path]::GetFileName($filename)
+    $ext  = [System.IO.Path]::GetExtension($name).ToLower()
+
+    if ($ext -eq ".json") {
+        return (Join-Path $repoRoot ("data\" + $name))
+    }
+    if ($ext -ne ".md") {
+        return $null  # ignore other types
+    }
+
+    # MD routing
+    if ($rootDocs -contains $name) {
+        return (Join-Path $repoRoot $name)
+    }
+    if ($name -like "HANDOFF*") {
+        return (Join-Path $repoRoot $name)
+    }
+
+    # Verdicts: user_verdicts_<x>.md -> verdicts/<x>.md (strip prefix for cleaner naming)
+    if ($name -like "user_verdicts_*") {
+        $clean = $name -replace "^user_verdicts_", ""
+        return (Join-Path $repoRoot ("verdicts\" + $clean))
+    }
+    if ($name -like "*_verdicts.md") {
+        return (Join-Path $repoRoot ("verdicts\" + $name))
+    }
+
+    # Default: archive
+    return (Join-Path $repoRoot ("archive\" + $name))
+}
 
 $copied = 0
 
-# Sync .md files to root (except those in archive/ or verdicts/ already)
-$mdFiles = Get-ChildItem -Path $src -Filter "*.md" -File
-foreach ($f in $mdFiles) {
-    if ($rootProtected -contains $f.Name) { continue }
-    $dest = Join-Path $repoRoot $f.Name
-    $needsCopy = $true
-    if (Test-Path $dest) {
-        $srcHash  = (Get-FileHash $f.FullName -Algorithm MD5).Hash
-        $destHash = (Get-FileHash $dest -Algorithm MD5).Hash
-        if ($srcHash -eq $destHash) { $needsCopy = $false }
-    }
-    if ($needsCopy) {
-        Copy-Item -Path $f.FullName -Destination $dest -Force
-        $copied++
-    }
+$allFiles = Get-ChildItem -Path $src -File | Where-Object {
+    $_.Extension -eq ".md" -or $_.Extension -eq ".json"
 }
 
-# Sync .json files to data/
-$dataDir = Join-Path $repoRoot "data"
-if (-not (Test-Path $dataDir)) { New-Item -ItemType Directory -Path $dataDir -Force | Out-Null }
-$jsonFiles = Get-ChildItem -Path $src -Filter "*.json" -File
-foreach ($f in $jsonFiles) {
-    $dest = Join-Path $dataDir $f.Name
+foreach ($f in $allFiles) {
+    if ($rootProtected -contains $f.Name) { continue }
+
+    $dest = Get-Target-Path $f.FullName
+    if (-not $dest) { continue }
+
     $needsCopy = $true
     if (Test-Path $dest) {
         $srcHash  = (Get-FileHash $f.FullName -Algorithm MD5).Hash
@@ -56,6 +89,8 @@ foreach ($f in $jsonFiles) {
         if ($srcHash -eq $destHash) { $needsCopy = $false }
     }
     if ($needsCopy) {
+        $destDir = Split-Path $dest
+        if (-not (Test-Path $destDir)) { New-Item -ItemType Directory -Path $destDir -Force | Out-Null }
         Copy-Item -Path $f.FullName -Destination $dest -Force
         $copied++
     }
