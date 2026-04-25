@@ -1,0 +1,20 @@
+{
+  "target_app": "3ds Max 2022",
+  "dxf_version": "AC1032",
+  "dxf_version_label": "R2018",
+  "dxf_version_fallback": "AC1024",
+  "dxf_version_fallback_label": "R2010",
+  "fallback_trigger": "if any layer name matches ^AECC_ OR doc.classes contains AcDbProxyEntity OR ACAD_PROXY count > 0",
+  "units": "mm",
+  "insunits_code": 4,
+  "z_handling": "force_zero_all",
+  "z_handling_rule": "for every entity with vertices/insertion_point, set Z=0 before saveas",
+  "z_handling_exceptions": [],
+  "saveas_strategy": "atomic_tmp_then_rename",
+  "post_save_validation": "ezdxf.recover.readfile must succeed on output before os.replace",
+  "rationale": {
+    "dxf_version": "Max 2022 imports R2018 natively; R2010 fallback avoids ACAD_PROXY corruption (MASTER_STATE.md issue #2)",
+    "units": "UK construction standard; matches BH/DWH source files",
+    "z_handling": "User decision 2026-04-25 — flat site plan import for archviz"
+  }
+}
