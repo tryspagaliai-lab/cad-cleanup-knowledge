@@ -1,0 +1,24 @@
+# Logs
+*.log
+logs/
+
+# Temp
+*.tmp
+*.bak
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+
+# Local copies that shouldn't be tracked
+*_local.md
+.env
