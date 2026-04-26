@@ -1,0 +1,53 @@
+{
+  "input": "E:\\AgentOS\\exports\\brook_view_xdwg\\X_converted.dxf",
+  "output": "E:\\AgentOS\\exports\\brook_view_xdwg\\X_illustrator_ready.dxf",
+  "drop_text_entities": false,
+  "layers_total": 722,
+  "layers_kept": 715,
+  "layers_dropped": 7,
+  "layer_table_entries_removed": 7,
+  "entities_kept": 2142,
+  "entities_dropped": 4,
+  "entities_dropped_by_layer": 4,
+  "entities_dropped_text_in_kept_layers": 0,
+  "inserts_rescued_from_dropped_layers": 0,
+  "entities_total": 2146,
+  "entity_types_scanned": {
+    "LWPOLYLINE": 625,
+    "HATCH": 17,
+    "MTEXT": 312,
+    "LINE": 512,
+    "LEADER": 1,
+    "INSERT": 561,
+    "CIRCLE": 6,
+    "ARC": 108,
+    "DIMENSION": 2,
+    "OLE2FRAME": 2
+  },
+  "kept_by_category": {
+    "other": 333,
+    "surface_hard": 31,
+    "explicit": 1,
+    "annotation": 47,
+    "surface_road": 49,
+    "surface_path": 10,
+    "linework_fence": 16,
+    "linework_wall": 23,
+    "vegetation": 48,
+    "surface_parking": 7,
+    "sheet_meta": 17,
+    "surface_drive": 7,
+    "site_furniture": 17,
+    "building": 46,
+    "surface_soft": 8,
+    "xref_other": 7,
+    "surface_water": 4,
+    "services_utility": 33,
+    "fill_pattern": 4,
+    "linework_rail_gate": 7
+  },
+  "dropped_by_category": {
+    "user_blacklist": 2,
+    "dimension": 5
+  }
+}
