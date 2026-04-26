@@ -1,0 +1,316 @@
+{
+  "input": "E:\\AgentOS\\exports\\brook_view_xdwg\\mega\\brook_view_MEGA_MODELLING.dxf",
+  "output": "E:\\AgentOS\\exports\\brook_view_xdwg\\mega\\brook_view_MEGA_MAX_READY.dxf",
+  "entities_moved": 82976,
+  "layers_removed": 211,
+  "group_to_sources": {
+    "0": [
+      "0"
+    ],
+    "Defpoints": [
+      "Defpoints"
+    ],
+    "#00_Developer_Base": [
+      "Redrow - Net Areas (Phase 1a)",
+      "Redrow - Bins",
+      "Redrow - Sheds",
+      "Redrow - ASHP",
+      "Redrow - Shared",
+      "Redrow - Rented",
+      "Redrow - Sprinklers",
+      "Redrow - Paving Hatch",
+      "01-Countryside VA"
+    ],
+    "#00_Misc": [
+      "RAS - Paving Hatch",
+      "RAS - Roads",
+      "RAS - Footpaths",
+      "RAS - Walls",
+      "RAS - Site Boundary",
+      "B-Footprint",
+      "B-Graphic",
+      "B-Entrance",
+      "bins",
+      "B-Service Entry",
+      "A-Betts",
+      "BA MESH SPAN BLOCK",
+      "BA MESH",
+      "BA EXTERNAL WALLS OUTLINE",
+      "BA PARTITIONS",
+      "BA FOUNDATION HIDDEN",
+      "BA FOUNDATION OUTLINE",
+      "BA FLOOR SPANS",
+      "BA SECTION MARKS",
+      "BA FOUNDATION WIDTHS",
+      "BA CL",
+      "BA EXTERNAL WALLS HATCH",
+      "BA MESH SPANS",
+      "B-Handing",
+      "planning hatch",
+      "Plan_Walls",
+      "COLUMNS",
+      "31-walls",
+      "_STATION",
+      "HA-ANN-CHLINES",
+      "SECT-JUNC-CWAY",
+      "MA-STR",
+      "MA-ARC",
+      "HA-ARC-PAD",
+      "CUT-INDICATOR",
+      "PROPOSED-BATTERS",
+      "FILL-INDICATOR",
+      "SECT-BOX-LINES",
+      "SECT-CHLINES",
+      "XSECT-SECTION",
+      "HA-STR-PAD",
+      "SECT-SURFACE",
+      "PROPOSED-FWAY",
+      "CWAY-CHAN-PAD",
+      "CONT-SECONDARY",
+      "CONT-PRIMARY",
+      "BCL_Cut Line  - Phases",
+      "EARTHWORKS",
+      "TADPOLES",
+      "BCL_Road Indicators",
+      "SECT-JUNC-LINES",
+      "SECT-HANN",
+      "VA-GRADE",
+      "VA-PARAB",
+      "SECT-VANN",
+      "HA-ANN-TPSYMBOLS",
+      "PROPOSED-TOK",
+      "GEOMETRY-2D",
+      "ROAD_CENTRELINES",
+      "-AAP_ffls",
+      "-AAP_ret underbuild",
+      "-AAP_paths steps",
+      "-AAP_gradient",
+      "-AAP_ret tank",
+      "-AAP_earthworks tadpoles",
+      "-AAP_threshold step",
+      "-AAP_ Threshold Step",
+      "-AAP_bin position new",
+      "025-TEXT",
+      "L-SITE",
+      "A-DETL-GENF-1",
+      "A-DETL-THIN",
+      "A213_Walls_Plaster board",
+      "A700_Furniture",
+      "A400_Finishes",
+      "A240_Stairs",
+      "A040_Elevations",
+      "A-DETL-GENF",
+      "A-GLAZ",
+      "A-GLAZ-1",
+      "M-EQPM",
+      "M-EQPM-HDLN",
+      "A-GENM",
+      "A-GENM-1",
+      "A730_Kitchen_Fit",
+      "0-3",
+      "P-SANR-FIXT-1",
+      "A-Stair",
+      "H-Stair Detail",
+      "RSO-FORWARD VISIBILITY",
+      "RSO-VISIBILITY ENVELOPE",
+      "RSO-CALM",
+      "RSO-CHAN",
+      "JUNCTION_VISIBILITY",
+      "S38-EXTENT",
+      "RSO-BUILDOUT",
+      "RSO-CENTRELINES",
+      "TRIANGLE",
+      "GH_TOPS",
+      "GH_BOTTOMS",
+      "GH_GATE",
+      "GH_UTILITIES",
+      "GH_LEVELS",
+      "GH_GATE_DEMO",
+      "GH_LINE_MARKING"
+    ],
+    "#00_Boundary-Fences": [
+      "RAS - Garden Fences",
+      "RAS - Post and Rail Fence",
+      "31-fences",
+      "GH_FENCES",
+      "GH_FENCES_DEMO"
+    ],
+    "#00_Main_Road_Tarmac": [
+      "RAS - Road Markings",
+      "1211 Highway Design 8$0$RSO-CALM",
+      "1211 Highway Design 8$0$RSO-PATH",
+      "1211 Highway Design 8$0$RSO-CENTRELINES",
+      "1211 Highway Design 8$0$RSO-VERGE",
+      "1211 Highway Design 8$0$BCL_L_Tactile Paving",
+      "1211 Highway Design 8$0$RSO-TACTILE",
+      "1211 Highway Design 8$0$RSO-BUILDOUT",
+      "1211 Highway Design 8$0$ROAD_CENTRELINES",
+      "GH_ROAD",
+      "GH_VERGE_TARMAC"
+    ],
+    "#00_Trees": [
+      "RAS - New trees",
+      "Redrow - Trees",
+      "GH_TREE_CANOPY",
+      "GH_TREE_TRUNK",
+      "GH_TREE_DEMO",
+      "GH_TREE_INFORMATION"
+    ],
+    "#00_Parking": [
+      "RAS - Parking Spaces",
+      "Redrow - Parking Spaces"
+    ],
+    "#00_HT_Base": [
+      "B-HT Name",
+      "Redrow - First time homes",
+      "B-Conservatory",
+      "BALCONIES",
+      "A-PLOT NUMBER",
+      "GH_BUILDINGS",
+      "GH_BUILDING_HEIGHTS"
+    ],
+    "#00_Driveways": [
+      "Redrow - Private Drives Hatch",
+      "31-drives"
+    ],
+    "#00_Paving_Block": [
+      "Redrow - Slabs",
+      "BA SLAB OUTLINE"
+    ],
+    "#00_Easements_Shared": [
+      "Redrow - Deed of Grant JPG 5m Easement",
+      "Redrow - Underground (brown) and overhead (yellow) cables in Easement JPG",
+      "000 - National Grid Easement",
+      "C-EASEMENT_AW"
+    ],
+    "#00_HT_Paths_Rear_Front": [
+      "28-House type- Patios-rear paths",
+      "RSO-PATH"
+    ],
+    "#00_Drainage_Services": [
+      "E-Foul-Plot Drainage",
+      "E-Storm-Plot Drainage",
+      "-AAP_private sw gully",
+      "A-RWP",
+      "GH_DRAINAGE",
+      "GH_DRAINAGE_LVLS"
+    ],
+    "#00_Bay_Windows_Doors": [
+      "B-Window Openings",
+      "Plan_Doors & Windows",
+      "A-DOOR",
+      "A-DOOR-FRAM",
+      "A-DOOR-1"
+    ],
+    "#00_Roofs": [
+      "V-Roof O-H",
+      "A-ROOFlite"
+    ],
+    "#00_Walls": [
+      "BA SUB WALL",
+      "A213_Walls_Plasterboard",
+      "-AAP_ret wall",
+      "A-WALL-PATT-1",
+      "A-WALL-1",
+      "A210_Ext_Walls",
+      "A-WALL",
+      "I-WALL",
+      "I-WALL-1",
+      "GH_WALLS"
+    ],
+    "#00_Patio": [
+      "V- Patio"
+    ],
+    "#00_Hedges_Shrubs": [
+      "V-Roof Canopy",
+      "L-Ee-45-20-M-HedgeSingle",
+      "GH_HEDGE"
+    ],
+    "#00_Gates_Railings": [
+      "Gate",
+      "BCL_Pedestrain Guard Rail"
+    ],
+    "#00_Road_Kerbs_Channels": [
+      "1211 Highway Design 8$0$RSO-KERBS",
+      "ROAD_CHANNELS",
+      "RSO-KERBS",
+      "GH_DKERB",
+      "GH_KERB_TOP",
+      "GH_KERB_TOP_LVLS"
+    ],
+    "#00_XREF_Context": [
+      "XREF Layer",
+      "-xref"
+    ],
+    "#00_Levels_Contours": [
+      "SECT-LEVEL-SECONDARY",
+      "SECT-LEVEL-PRIMARY",
+      "GH_CONTLEVS",
+      "GH_CONTPROM",
+      "GH_CONTOURS"
+    ],
+    "#00_Soft-Landscape": [
+      "PROPOSED-VERGE",
+      "GH_VEGETATION",
+      "GH_VERGE_CONC"
+    ],
+    "#00_Road_Tactiles": [
+      "BCL_Red tactiles",
+      "BCL_L_Tactile Paving"
+    ],
+    "#00_Road_Footway": [
+      "-AAP_level back of footway",
+      "ROAD_FOOTWAYS"
+    ],
+    "#00_Hardscape_Other": [
+      "-AAP_ret gravel board"
+    ],
+    "#00_Text_Annotation": [
+      "ANNO-TXT",
+      "G-ANNO-TEXT-1",
+      "A-ANNO-DIMS"
+    ],
+    "#00_Apartments": [
+      "Apartment Subs"
+    ],
+    "#00_Existing_Barriers": [
+      "GH_TRACK"
+    ],
+    "#00_Street_Furniture": [
+      "GH_SIGNS"
+    ]
+  },
+  "group_stats": {
+    "0": 1,
+    "Defpoints": 1,
+    "#00_Developer_Base": 9,
+    "#00_Misc": 105,
+    "#00_Boundary-Fences": 5,
+    "#00_Main_Road_Tarmac": 11,
+    "#00_Trees": 6,
+    "#00_Parking": 2,
+    "#00_HT_Base": 7,
+    "#00_Driveways": 2,
+    "#00_Paving_Block": 2,
+    "#00_Easements_Shared": 4,
+    "#00_HT_Paths_Rear_Front": 2,
+    "#00_Drainage_Services": 6,
+    "#00_Bay_Windows_Doors": 5,
+    "#00_Roofs": 2,
+    "#00_Walls": 10,
+    "#00_Patio": 1,
+    "#00_Hedges_Shrubs": 3,
+    "#00_Gates_Railings": 2,
+    "#00_Road_Kerbs_Channels": 6,
+    "#00_XREF_Context": 2,
+    "#00_Levels_Contours": 5,
+    "#00_Soft-Landscape": 3,
+    "#00_Road_Tactiles": 2,
+    "#00_Road_Footway": 2,
+    "#00_Hardscape_Other": 1,
+    "#00_Text_Annotation": 3,
+    "#00_Apartments": 1,
+    "#00_Existing_Barriers": 1,
+    "#00_Street_Furniture": 1
+  }
+}

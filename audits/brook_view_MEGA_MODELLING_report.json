@@ -1,0 +1,52 @@
+{
+  "input": "E:\\AgentOS\\exports\\brook_view_xdwg\\mega\\brook_view_MEGA_RAW.dxf",
+  "output": "E:\\AgentOS\\exports\\brook_view_xdwg\\mega\\brook_view_MEGA_MODELLING.dxf",
+  "drop_text_entities": true,
+  "layers_total": 289,
+  "layers_kept": 272,
+  "layers_dropped": 17,
+  "layer_table_entries_removed": 6,
+  "entities_kept": 82972,
+  "entities_dropped": 10520,
+  "entities_dropped_by_layer": 2468,
+  "entities_dropped_text_in_kept_layers": 8052,
+  "inserts_rescued_from_dropped_layers": 124,
+  "entities_total": 93492,
+  "entity_types_scanned": {
+    "LWPOLYLINE": 10420,
+    "HATCH": 384,
+    "LINE": 10510,
+    "INSERT": 5766,
+    "ARC": 483,
+    "CIRCLE": 734,
+    "POINT": 801,
+    "POLYLINE": 3395,
+    "MTEXT": 4174,
+    "TEXT": 5562,
+    "3DFACE": 51387
+  },
+  "kept_by_category": {
+    "other": 139,
+    "surface_hard": 13,
+    "surface_road": 22,
+    "surface_path": 7,
+    "linework_fence": 6,
+    "linework_wall": 20,
+    "vegetation": 8,
+    "surface_parking": 2,
+    "surface_drive": 4,
+    "site_furniture": 8,
+    "building": 19,
+    "surface_soft": 4,
+    "xref_other": 2,
+    "linework_rail_gate": 3,
+    "services_utility": 11,
+    "explicit": 3,
+    "fill_pattern": 1
+  },
+  "dropped_by_category": {
+    "sheet_meta": 3,
+    "annotation": 13,
+    "user_blacklist": 1
+  }
+}

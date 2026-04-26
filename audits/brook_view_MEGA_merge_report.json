@@ -1,0 +1,137 @@
+{
+  "missing_sources": [],
+  "aliases": [
+    {
+      "prefix": "p1__src.dwg",
+      "src": "C:\\Users\\zilva\\Desktop\\BROOK VIEW at PICKFORD GATE\\Ph1\\25-001_05_01 rev E External Works Phase 1.dwg"
+    },
+    {
+      "prefix": "p2__src.dwg",
+      "src": "C:\\Users\\zilva\\Desktop\\BROOK VIEW at PICKFORD GATE\\Ph2\\25-001_05_03 rev C External Works Phase 2.dwg"
+    },
+    {
+      "prefix": "p3__src.dwg",
+      "src": "C:\\Users\\zilva\\Desktop\\BROOK VIEW at PICKFORD GATE\\Ph3\\25-001_05_05 rev C External Works Phase 3.dwg"
+    },
+    {
+      "prefix": "r_base__src.dwg",
+      "src": "C:\\Users\\zilva\\Desktop\\BROOK VIEW at PICKFORD GATE\\Redrow\\External Works\\External works 1286-05-ALL - Standard\\1286 Eastern Green - REDROW\\1286 Base.dwg"
+    },
+    {
+      "prefix": "r_all__src.dwg",
+      "src": "C:\\Users\\zilva\\Desktop\\BROOK VIEW at PICKFORD GATE\\Redrow\\External Works\\External works 1286-05-ALL - Standard\\1286-05-ALL.dwg"
+    },
+    {
+      "prefix": "r_drain__src.dwg",
+      "src": "C:\\Users\\zilva\\Desktop\\BROOK VIEW at PICKFORD GATE\\Redrow\\External Works\\External works 1286-05-ALL - Standard\\07 Private Drainage Layouts & Details\\1286-07-ALL.dwg"
+    },
+    {
+      "prefix": "r_hwy__src.dwg",
+      "src": "C:\\Users\\zilva\\Desktop\\BROOK VIEW at PICKFORD GATE\\Redrow\\External Works\\External works 1286-05-ALL - Standard\\1211 Eastern Green, Pickford\\1211 Highway Design 8.dwg"
+    },
+    {
+      "prefix": "r_strip__src.dwg",
+      "src": "C:\\Users\\zilva\\Desktop\\BROOK VIEW at PICKFORD GATE\\Redrow\\External Works\\External works 1286-05-ALL - Standard\\21.11.25 Layout\\X. Strpped 21.11.25.dwg"
+    },
+    {
+      "prefix": "r_survey__src.dwg",
+      "src": "C:\\Users\\zilva\\Desktop\\BROOK VIEW at PICKFORD GATE\\Redrow\\External Works\\External works 1286-05-ALL - Standard\\Surveys\\survey.dwg"
+    }
+  ],
+  "merge_log": [
+    {
+      "prefix": "x",
+      "src": "E:\\cad-site-agent\\_tests\\brook_view_BOUND_2026-04-19\\X_FINAL_MODELLING.dxf",
+      "status": "ok_preclean",
+      "src_msp_entities": 8562,
+      "added_to_target": 8560,
+      "target_msp_after": 8560
+    },
+    {
+      "prefix": "p1",
+      "src": "C:\\Users\\zilva\\Desktop\\BROOK VIEW at PICKFORD GATE\\Ph1\\25-001_05_01 rev E External Works Phase 1.dwg",
+      "status": "ok_fallback",
+      "src_msp_entities": 3075,
+      "added_to_target": 1457,
+      "target_msp_after": 10017,
+      "first_error": "AttributeError: 'NoneType' object has no attribute 'destroy'"
+    },
+    {
+      "prefix": "p2",
+      "src": "C:\\Users\\zilva\\Desktop\\BROOK VIEW at PICKFORD GATE\\Ph2\\25-001_05_03 rev C External Works Phase 2.dwg",
+      "status": "ok_fallback",
+      "src_msp_entities": 2920,
+      "added_to_target": 1361,
+      "target_msp_after": 11378,
+      "first_error": "AttributeError: 'NoneType' object has no attribute 'destroy'"
+    },
+    {
+      "prefix": "p3",
+      "src": "C:\\Users\\zilva\\Desktop\\BROOK VIEW at PICKFORD GATE\\Ph3\\25-001_05_05 rev C External Works Phase 3.dwg",
+      "status": "ok_fallback",
+      "src_msp_entities": 2036,
+      "added_to_target": 1026,
+      "target_msp_after": 12404,
+      "first_error": "AttributeError: 'NoneType' object has no attribute 'destroy'"
+    },
+    {
+      "prefix": "r_all",
+      "src": "C:\\Users\\zilva\\Desktop\\BROOK VIEW at PICKFORD GATE\\Redrow\\External Works\\External works 1286-05-ALL - Standard\\1286-05-ALL.dwg",
+      "status": "ok_fallback",
+      "src_msp_entities": 6930,
+      "added_to_target": 5595,
+      "target_msp_after": 17999,
+      "first_error": "AttributeError: 'NoneType' object has no attribute 'destroy'"
+    },
+    {
+      "prefix": "r_base",
+      "src": "C:\\Users\\zilva\\Desktop\\BROOK VIEW at PICKFORD GATE\\Redrow\\External Works\\External works 1286-05-ALL - Standard\\1286 Eastern Green - REDROW\\1286 Base.dwg",
+      "status": "ok",
+      "src_msp_entities": 28,
+      "added_to_target": 28,
+      "target_msp_after": 18027,
+      "audit_errors_load": 0,
+      "audit_fixes_load": 0
+    },
+    {
+      "prefix": "r_drain",
+      "src": "C:\\Users\\zilva\\Desktop\\BROOK VIEW at PICKFORD GATE\\Redrow\\External Works\\External works 1286-05-ALL - Standard\\07 Private Drainage Layouts & Details\\1286-07-ALL.dwg",
+      "status": "ok_fallback",
+      "src_msp_entities": 5968,
+      "added_to_target": 4844,
+      "target_msp_after": 22871,
+      "first_error": "AttributeError: 'NoneType' object has no attribute 'destroy'"
+    },
+    {
+      "prefix": "r_hwy",
+      "src": "C:\\Users\\zilva\\Desktop\\BROOK VIEW at PICKFORD GATE\\Redrow\\External Works\\External works 1286-05-ALL - Standard\\1211 Eastern Green, Pickford\\1211 Highway Design 8.dwg",
+      "status": "ok_fallback",
+      "src_msp_entities": 2362,
+      "added_to_target": 2225,
+      "target_msp_after": 25096,
+      "first_error": "AttributeError: 'NoneType' object has no attribute 'destroy'"
+    },
+    {
+      "prefix": "r_strip",
+      "src": "C:\\Users\\zilva\\Desktop\\BROOK VIEW at PICKFORD GATE\\Redrow\\External Works\\External works 1286-05-ALL - Standard\\21.11.25 Layout\\X. Strpped 21.11.25.dwg",
+      "status": "ok_fallback",
+      "src_msp_entities": 2081,
+      "added_to_target": 1521,
+      "target_msp_after": 26617,
+      "first_error": "AttributeError: 'NoneType' object has no attribute 'destroy'"
+    },
+    {
+      "prefix": "r_survey",
+      "src": "C:\\Users\\zilva\\Desktop\\BROOK VIEW at PICKFORD GATE\\Redrow\\External Works\\External works 1286-05-ALL - Standard\\Surveys\\survey.dwg",
+      "status": "ok",
+      "src_msp_entities": 66999,
+      "added_to_target": 66999,
+      "target_msp_after": 93616,
+      "audit_errors_load": 0,
+      "audit_fixes_load": 0
+    }
+  ],
+  "total_entities": 93616,
+  "mega_raw_path": "E:\\AgentOS\\exports\\brook_view_xdwg\\mega\\brook_view_MEGA_RAW.dxf",
+  "mega_raw_size": 68544996
+}
