@@ -1,0 +1,48 @@
+{
+  "master_source": "C:\\Users\\zilva\\Desktop\\BROOK VIEW at PICKFORD GATE\\X.dwg",
+  "bound_output": "E:\\AgentOS\\exports\\brook_view_xdwg\\X_BOUND.dxf",
+  "bound_size_bytes": 51926814,
+  "xrefs_total": 6,
+  "xrefs_bound_ok": 2,
+  "xrefs_failed": 4,
+  "details": [
+    {
+      "xref": "Topo\\34377_T_REV4 (2).dwg",
+      "alias": "xref_01.dwg",
+      "status": "ok",
+      "audit_errors": 0,
+      "audit_fixes": 0
+    },
+    {
+      "xref": "Road Layout\\Road Layout.dwg",
+      "alias": "xref_02.dwg",
+      "status": "fail",
+      "error": "AttributeError: 'NoneType' object has no attribute 'destroy'"
+    },
+    {
+      "xref": "Promap\\Eastern Green Pickford RM 2 & 3A 100425 - CB - 11.12.25.dwg",
+      "alias": "xref_03.dwg",
+      "status": "fail",
+      "error": "AttributeError: 'NoneType' object has no attribute 'destroy'"
+    },
+    {
+      "xref": "General Arrangement\\02002-BCE-HEN-ZZ-DR-W-00001-00011 BCE AS-BUILT GENERAL ARRANGEMENT LAYOUT idp edit.dwg",
+      "alias": "xref_04.dwg",
+      "status": "fail",
+      "error": "AttributeError: 'NoneType' object has no attribute 'destroy'"
+    },
+    {
+      "xref": "Tree Survey Plan\\6285 - Tree Survey Plan - Phase 2 & 3A idp edit.dwg",
+      "alias": "xref_05.dwg",
+      "status": "fail",
+      "error": "AttributeError: 'NoneType' object has no attribute 'destroy'"
+    },
+    {
+      "xref": "2024.05.17 - Approved bus link\\X_ Phase 2 Highway Layout Rev J idp edit.dwg",
+      "alias": "xref_06.dwg",
+      "status": "ok",
+      "audit_errors": 0,
+      "audit_fixes": 0
+    }
+  ]
+}
